@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="es-CL">
+<head>
+ <meta charset="utf-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+ <meta name="theme-color" content="#f6efe4">
+ <meta name="description" content="El teléfono: un viaje por el tiempo. Presentación interactiva de segundo básico.">
+ <title>El teléfono: un viaje por el tiempo · Adriana Ojeda</title>
+ <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+ <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="presentation" id="presentation">
+ <header class="topbar">
+  <div class="brand"><div class="brand-icon" aria-hidden="true">✳</div><div class="brand-name">EL TELÉFONO <span>· UN VIAJE POR EL TIEMPO</span></div></div>
+  <div class="top-actions"><span class="grade-chip">2° básico</span><button class="tool-btn" type="button" id="contentsBtn" aria-label="Abrir índice" title="Índice">☷ <span>Índice</span></button><button class="tool-btn" type="button" id="fullBtn" aria-label="Pantalla completa" title="Pantalla completa">⛶ <span>Presentar</span></button></div>
+ </header>
+ <main id="stage" class="stage" aria-label="Presentación"><div id="root" aria-live="polite"></div></main>
+ <footer class="bottom-bar"><span class="count"><strong id="pageNow">01</strong><span>/</span><span id="pageAll">16</span></span><span class="progress-track" aria-hidden="true"><span id="progressBar"></span></span><span class="section-label" id="sectionName">Comenzamos</span><div class="navigation"><button type="button" id="backBtn" class="nav-arrow" aria-label="Diapositiva anterior">← <span>Anterior</span></button><button type="button" id="forwardBtn" class="nav-arrow primary"><span id="forwardText">Siguiente</span> →</button></div></footer>
+</div>
+<div id="indexOverlay" class="modal-overlay" hidden role="dialog" aria-modal="true" aria-label="Índice de diapositivas"><div class="modal-card"><div class="modal-heading"><div><small>EL RECORRIDO</small><h2>¿A dónde vamos?</h2></div><button class="modal-close" id="closeIndex" aria-label="Cerrar índice">×</button></div><div id="indexItems" class="index-items"></div></div></div>
+<script src="app.js" defer></script>
+</body>
+</html>
